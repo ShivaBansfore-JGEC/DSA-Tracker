@@ -1,0 +1,24 @@
+
+{
+    "auth":{
+        "errormsg":"",
+        "loading":false,
+        "current_user":""
+    },
+    "module":{
+        
+        "Array":{
+            "question_completed":0,
+            "total_question":0
+        },
+        "Matrix":{
+            
+            "question_completed":0,
+            "total_question":0
+        }
+    
+    },
+    "curr_questionlist_status":null
+    
+ 
+}
