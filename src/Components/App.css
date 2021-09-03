@@ -4,9 +4,162 @@
 body{
     margin: 0;
 }
-.active-div{
-    background-color: green;
+
+
+/* This block contains css of questionlist.js */
+
+.question-containers{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.question-heading{
+    width: 75%;
+    height: 50px;
+    background-color: aquamarine;
+    margin-top: 50px;
+    display: flex;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+}
+
+.question-title{
+    width: 45%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question-heading h4{
+    font-family: cursive;
+}
+.difficulty{
+    width:20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Attempt{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-list-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-list-container ul{
+    width: 75%;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+.list-container{
+    width: 100%;
+    height: 100%;
+    
+}
+.question-li{
+    width:100%;
+    height: 50px;
+    
+}
+
+.active-div{
+    background-color:#61B329;
+}
+.question-wrap{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+
+.question-name{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.question-difficulty{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkboc-container{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.checkBox{
+    width: 20px;
+    height: 20px;
+}
+.question-attempt{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-attempt a{
+    size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:orange;
+
+}
+.attemp-btn{
+    width: 80px;
+    height: 35px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+.serchBox-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.secrchBox{
+    width: 25%;
+    height: 35%;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding-left: 20px;
+}
+
+
+
+/* ------------------------------------------------------------------- */
 
 .containers{
     width: 100vw;

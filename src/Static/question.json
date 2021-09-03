@@ -4,16 +4,19 @@
             {
                 "question-no":1,
                 "question-name":"sort-01",
-                "url":""
+                "url":"",
+                "difficulty":"easy"
             },
             {
                 "question-no":2,
                 "question-name":"Find Shortest Path",
-                "url":""
+                "url":"",
+                "difficulty":"Hard"
             },
             {
                 "question-no":3,
-                "question-name":"N Queen"
+                "question-name":"N Queen",
+                "difficulty":"easy"
             }
         ]
     },
@@ -22,16 +25,19 @@
             {
                 "question-no":4,
                 "question-name":"sort-01",
-                "url":""
+                "url":"",
+                "difficulty":"Hard"
             },
             {
                 "question-no":5,
                 "question-name":"sort-01",
-                "url":""
+                "url":"",
+                "difficulty":"easy"
             },{
                 "question-no":6,
                 "question-name":"sort-01",
-                "url":""
+                "url":"",
+                "difficulty":"easy"
             }
         ]
     }

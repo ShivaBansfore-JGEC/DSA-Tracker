@@ -13,6 +13,14 @@ export const sendDataToStore=(data)=>{
     }
 }
 
+export const updateCurrModule=(curr_module)=>{
+    return{
+        type:actionTypes.UPDATE_CURR_MODULE,
+        module:curr_module
+    }
+}
+
+
 export const updateQuestionStatus = (module, qn) => async (dispatch) => {
     console.log("hello")
     dispatch({ type:actionTypes.UPDATE_QUESTION_STATUS, payload: { module: module, qn: qn } })
@@ -37,4 +45,6 @@ export const  updateStatusInFirebase=(userData)=>{
 
     }
 }
+
+
 

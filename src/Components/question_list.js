@@ -1,16 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from "react-redux";
+import { NavLink } from 'react-router-dom';
 import * as dashboardAction from '../Actions/dashBoardAction';
 import questions from '../Static/question.json';
 import "./App.css";
 function Question_list(props) {
     
-    console.log("question props",props);
+    console.log("question props",props.allQuestionStatus);
     const[loading,setLoading]=useState(true);
-    let curr_module=props.location.state;
-    //console.log("current module",curr_module);
+    const[questions_arr,setQuestionArr]=useState([]);
+    const [currsearchText,setText]=useState('');
+
+    let curr_module=props.allQuestionStatus.curr_module;
+    console.log("questions",curr_module);
     let questionList=questions[curr_module].question;
-    //console.log("question list",questionList.question);
+    
+    console.log("question array",questions_arr);
+
+    useEffect(()=>{
+        if(currsearchText==''){
+            setQuestionArr(questionList);
+        }
+    },[questions_arr])
 
   
   
@@ -21,26 +32,23 @@ function Question_list(props) {
         props.updateQuestionStatus(module, qn);
         props.updateQuestionStatusInFirebase({"module":module,"qn":qn,"status":!status});
         
-        //console.log(checkBoxRef.current);
-        
-        // const dummy = listArr
-        // dummy.map(item => {
-        //     if(item.question_no == qn){
-        //         item.status = !item.status
-        //     }
-        //     return item
-        // })
-        // setListArr(dummy)
-        
-      
-        
-
-     
-       //props.updateQuestion({"question_no":question_no,"module_name":curr_module,"status":true})
     }
 
-    //const element=document.getElementById("question-container");
-    //console.log("class name",element.className);
+    const handleSearch=(e)=>{
+        let value=e.target.value;
+        setText(value);
+        console.log("i am from onChange method");
+        console.log("question arr:",questions_arr);
+        let question_array = questions_arr.filter((Obj) => {
+            let title = Obj["question-name"].trim().toLowerCase();
+            return title.includes(value.toLowerCase());
+        });
+        setQuestionArr(question_array);
+        console.log("array question-->",questions_arr);
+
+    }
+
+    
     useEffect(()=>{
         console.log("useState Called");
         setLoading(false);
@@ -48,39 +56,74 @@ function Question_list(props) {
 
     return (
         <>
-        <div>
-            <h1>Question is coming soon.......</h1>
+        <div className="serchBox-container">
+            <input className="secrchBox" value={currsearchText} type='text' placeholder='search your question here...' onChange={handleSearch}></input>
+        </div>
+        <div className="question-containers">
+            <div className="question-heading">
+                <div className="question-title">
+                    <h4>Title</h4>
+                </div>
+                <div className="difficulty">
+                    <h4>Difficulty</h4>
+                </div>
+                <div className="status">
+                    <h4>Status</h4>
+                </div>
+
+                <div className="Attempt">
+                    <h4>Attempt</h4>
+                </div>
+
+
+            </div>
             {
                 loading==true?
                 <>
                     <h1>Please wait Loading.....</h1>
                 </> :
                 <>
-                <ul style={{listStyle:'none',margin:10}} id="question-ul">
+                <div className="question-list-container">
+                <ul style={{listStyle:'none'}} id="question-ul">
                         {
                             
-                            questionList.map((data)=>{
+                            
+                            questions_arr.map((data)=>{
                                 
                                 //let class_name='active';
-                                //let class_name=props.dashboard.curr_questionlist_status!=null?props.dashboard.curr_questionlist_status[curr_module][data["question-no"]].status?'active-div':"inactive-div":'inactive-div';
+                                //let class_name=props.dashboard.curr_questionlist_status!=null?props.dashboard.curr_questionlist_status[curr_module][data["question-no"]].status?'active-div question-wrap':"inactive-div question-wrap":'inactive-div';
                                 let status=(props.allQuestionStatus.curr_questionlist_status[curr_module][data["question-no"]].status);
         
-                                let class_name=status==true?'active-div':'inactive-div';
+                                let class_name=status==true?'active-div question-wrap':'inactive-div question-wrap';
 
                                 return(
-                                    <li style={{margin:10}} className="question-li" key={data["question-no"]}>
-                                        <div style={{width:750,height:40,border:2}} id="question-container" className={class_name}>
-                                
-                                        <span className="question-span">{data["question-no"]}</span>
-                                        <span className="question-span">{data["question-name"]}</span>
-                                        <input type="checkbox" className="checkBox" defaultChecked={status} id="checkBox" onClick={(e) => toggle(e, curr_module, data["question-no"])}></input>
-
+                                    <div className="list-container">
+                                    <li  className="question-li" key={data["question-no"]}>
+                                        <div id="question-container" className={class_name}>
+                                        <div className="question-name">
+                                        <span>{data["question-name"]}</span>
                                         </div>
+                                        <div className="question-difficulty">
+                                            <span>{data["difficulty"]}</span>
+                                        </div>
+                                        <div className="checkboc-container">
+                                        <input type="checkbox" className="checkBox" defaultChecked={status} id="checkBox" onClick={(e) => toggle(e, curr_module, data["question-no"])}></input>
+                                            </div>
+                                        <div className="question-attempt">
+                
+                                            <a href="https://www.interviewbit.com/courses/programming/">
+                                                <div className="attemp-btn">Solve</div>
+                                            </a>
+                                        </div>
+                                        </div>
+
                                     </li>
+                                    </div>
                                 )
                             })
                         } 
                     </ul>
+                    </div>
                 </>
             }
              

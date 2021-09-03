@@ -9,6 +9,11 @@ export default function dashboardReducer(state=initalState,action){
             return{
                 ...state,curr_questionlist_status:action.payload
             }
+        
+        case actionTypes.UPDATE_CURR_MODULE:
+            return{
+                ...state,curr_module:action.module
+            }
 
         case actionTypes.UPDATE_QUESTION_STATUS:
             console.log("state from reducer:",state);

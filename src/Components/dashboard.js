@@ -109,7 +109,7 @@ function Dashboard(props) {
 
     const handleClick = (value) => {
 
-        console.log("val:", value);
+        props.updateModule(value);
         //props.loadData();
         history.push("/questions", value);
     }
@@ -467,6 +467,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         signOut: () => dispatch(authAction.signout()),
         sendDataToStore: (data) => dispatch(dashboardAction.sendDataToStore(data)),
+        updateModule:(module)=>dispatch(dashboardAction.updateCurrModule(module))
     }
 }
 
