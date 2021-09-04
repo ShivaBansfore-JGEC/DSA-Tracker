@@ -3,41 +3,60 @@
         "question":[
             {
                 "question-no":1,
-                "question-name":"sort-01",
-                "url":"",
-                "difficulty":"easy"
+                "question-name":"Sort Colors",
+                "url":"https://leetcode.com/problems/sort-colors/",
+                "difficulty":"Medium",
+                "coins":30
             },
             {
                 "question-no":2,
-                "question-name":"Find Shortest Path",
-                "url":"",
-                "difficulty":"Hard"
+                "question-name":"Repeat and Missing Number",
+                "url":"https://practice.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+                "difficulty":"Easy",
+                "coins":10
             },
             {
                 "question-no":3,
-                "question-name":"N Queen",
-                "difficulty":"easy"
+                "question-name":"Merge two sorted Arrays without extra space",
+                "url":"https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1",
+                "difficulty":"Hard",
+                "coins":50
+            },
+            {
+                "question-no":4,
+                "question-name":"Maximum Subarray",
+                "url":"https://leetcode.com/problems/maximum-subarray/",
+                "difficulty":"Easy",
+                "coins":10
+            },
+            {
+                "question-no":5,
+                "question-name":"Merge Intervals",
+                "url":"https://leetcode.com/problems/merge-intervals/",
+                "difficulty":"Medium",
+                "coins":30
+            },
+            {
+                "question-no":6,
+                "question-name":"Find the Duplicate Number",
+                "url":"https://leetcode.com/problems/find-the-duplicate-number/",
+                "difficulty":"Medium",
+                "coins":30
             }
         ]
     },
     "Matrix":{
         "question":[
             {
-                "question-no":4,
+                "question-no":7,
                 "question-name":"sort-01",
                 "url":"",
-                "difficulty":"Hard"
-            },
-            {
-                "question-no":5,
-                "question-name":"sort-01",
-                "url":"",
-                "difficulty":"easy"
+                "difficulty":"Easy"
             },{
-                "question-no":6,
+                "question-no":8,
                 "question-name":"sort-01",
                 "url":"",
-                "difficulty":"easy"
+                "difficulty":"Easy"
             }
         ]
     }
