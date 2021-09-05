@@ -46,19 +46,25 @@ function Login(props) {
         
             {props.authMine.loading ?<h4 style={{ marginTop: '10%', height: '52vh' }}>Patiently Wait...we are logging you in</h4>:
             <>
-            <label>email:</label>
-            <input type='email' value={email} onChange={handleEmail}></input>
-            <br/>
-            <label>password:</label>
-            <input type='password' value={password} onChange={handlePass}></input>
-            <br/>
+                <div className="register-form-container">
+                <div className="form-container">
+                    <h1>Please SignIn...!</h1>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"></span>
+                <input type="email" class="form-control"   placeholder="Email" value={email} onChange={handleEmail} aria-label="Username" aria-describedby="addon-wrapping" />
+            </div>
+            <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"></span>
+                <input type="text" class="form-control" value={password} onChange={handlePass} placeholder="Password"  aria-label="Username" aria-describedby="addon-wrapping" />
+            </div>
             {props.authMine?.errormsg?.message ? <div className="input-group full">
                       <span className="error-message" >{props.authMine?.errormsg?.message}</span>
             </div> : <></>}
 
-            <button onClick={handleSignIn}>Sign In</button>
-            <br/>
-            <button onClick={handleSignup}>New User?</button></>}
+            <button type="button" onClick={handleSignIn} class="btn btn-info" >SignIn</button>
+            </div>
+            </div>
+            </>}
             </>
         }
     

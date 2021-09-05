@@ -42,21 +42,125 @@
                 "url":"https://leetcode.com/problems/find-the-duplicate-number/",
                 "difficulty":"Medium",
                 "coins":30
+            },
+            {
+                "question-no":7,
+                "question-name":"Next Permutation",
+                "url":"https://leetcode.com/problems/next-permutation/",
+                "difficulty":"Medium",
+                "coins":30
+            },
+            {
+                "question-no":8,
+                "question-name":"Count Inversions",
+                "url":"https://practice.geeksforgeeks.org/problems/inversion-of-array-1587115620/1",
+                "difficulty":"Medium",
+                "coins":30
+            },
+            {
+                "question-no":9,
+                "question-name":"Best Time to Buy and Sell Stock",
+                "url":"https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+                "difficulty":"Easy",
+                "coins":10
+            },
+            {
+                "question-no":10,
+                "question-name":"Pow(x, n)",
+                "url":"https://leetcode.com/problems/powx-n/",
+                "difficulty":"Medium",
+                "coins":30
+            },
+            {
+                "question-no":11,
+                "question-name":"Reverse Pairs",
+                "url":"https://leetcode.com/problems/reverse-pairs/",
+                "difficulty":"Hard",
+                "coins":50
+            },
+            {
+                "question-no":12,
+                "question-name":"Majority Element",
+                "url":"https://leetcode.com/problems/majority-element/",
+                "difficulty":"Easy",
+                "coins":10
+            },
+            {
+                "question-no":13,
+                "question-name":"Majority Element II",
+                "url":"https://leetcode.com/problems/majority-element-ii/",
+                "difficulty":"Medium",
+                "coins":30
             }
         ]
     },
     "Matrix":{
         "question":[
             {
-                "question-no":7,
-                "question-name":"sort-01",
-                "url":"",
-                "difficulty":"Easy"
+                "question-no":14,
+                "question-name":"Set Matrix Zeroes",
+                "url":"https://leetcode.com/problems/set-matrix-zeroes/",
+                "difficulty":"Medium",
+                "coins":30
             },{
-                "question-no":8,
-                "question-name":"sort-01",
-                "url":"",
-                "difficulty":"Easy"
+                "question-no":15,
+                "question-name":"Pascal's Triangle",
+                "url":"https://leetcode.com/problems/pascals-triangle/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":16,
+                "question-name":"Rotate Matrix",
+                "url":"https://leetcode.com/problems/rotate-image/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":17,
+                "question-name":"Search a 2D Matrix",
+                "url":"https://leetcode.com/problems/search-a-2d-matrix/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":18,
+                "question-name":"Unique Paths",
+                "url":"https://leetcode.com/problems/unique-paths/",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "String":{
+        "question":[
+            {
+                "question-no":19,
+                "question-name":"Reverse Words in a String",
+                "url":"https://leetcode.com/problems/reverse-words-in-a-string/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":20,
+                "question-name":"Longest Palindrome in a String",
+                "url":"https://practice.geeksforgeeks.org/problems/longest-palindrome-in-a-string3411/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":21,
+                "question-name":"Roman to Integer",
+                "url":"https://leetcode.com/problems/roman-to-integer/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":22,
+                "question-name":"String to Integer (atoi)",
+                "url":"https://leetcode.com/problems/string-to-integer-atoi/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":23,
+                "question-name":"Longest Common Prefix",
+                "url":"https://leetcode.com/problems/longest-common-prefix/",
+                "difficulty":"Easy",
+                "coins":10
             }
         ]
     }

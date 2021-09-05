@@ -9,18 +9,19 @@ import * as authAction from '../Actions/authAction';
 import { isLoaded, isEmpty } from 'react-redux-firebase';
 import firebase from 'firebase/app';
 import Progressbar from './progressBar';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+
 
 //images
 import lock from '../Static/images/lock.png';
+import unlock from '../Static/images/unlocked.png';
 
 
 //material ui
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+
 
 //-----------------------------
 
@@ -61,7 +62,7 @@ function Dashboard(props) {
     const bull = <span className={classes.bullet}>•</span>;
 
     //------------------------------------
-
+    const MySwal = withReactContent(Swal)
 
 
     useEffect(() => {
@@ -82,6 +83,7 @@ function Dashboard(props) {
                     for (let key in dataVal) {
                         if (dataVal[key].status == true)
                             solved_question[dataVal[key].module] = ++solved_question[dataVal[key].module] || 1
+                        
 
                         tot_ques[dataVal[key].module] = ++tot_ques[dataVal[key].module] || 1
 
@@ -89,13 +91,15 @@ function Dashboard(props) {
                         new_obj[key] = dataVal[key];
                         store_data[dataVal[key].module] = { ...store_data[dataVal[key].module], ...new_obj };
                     }
-                    console.log(solved_question);
+                    console.log("solved questions:",solved_question);
+                    console.log("data value",dataVal);
                     props.sendDataToStore(store_data);
                     setData(tot_ques);
                     setSolvedQuestion(solved_question);
 
                 } catch (err) {
                     console.log(toString(err.message));
+
                 }
 
                 console.log("user logged in", user.uid);
@@ -110,8 +114,29 @@ function Dashboard(props) {
     const handleClick = (value) => {
 
         props.updateModule(value);
-        //props.loadData();
-        history.push("/questions", value);
+        if(value=="Matrix"){
+            
+            let nofQuestionsolved=solvedQuestion["Array"]>0?solvedQuestion["Array"]:0;
+            let tot=data["Array"];
+
+            if(nofQuestionsolved<tot){
+                MySwal.fire({
+                    title: <p>Hello World</p>,
+                    footer: 'Copyright 2018',
+                    didOpen: () => {
+                      MySwal.clickConfirm()
+                    }
+                  }).then(() => {
+                    return MySwal.fire(<p>Please complete prevoius module first!.</p>)
+                  })
+                //alert("First solve previous module");
+            }else{
+                history.push("/questions", value);
+            }
+        }else{
+            history.push("/questions", value);
+        }
+
     }
 
 
@@ -152,11 +177,11 @@ function Dashboard(props) {
                                                 <div className="topic-title">
                                                         <h4 className='card-title'><b>Array</b></h4>
                                                         </div>
-                                                    <img className='lock-unlock' src={lock}></img>
+                                                    <img className='lock-unlock' src={solvedQuestion["Array"]==0?lock:unlock}></img>
                                                 </div>
 
                                                 <div className='card-content'>
-                                                    <p className="card-text">Solved : {solvedQuestion["Array"]}</p>
+                                                    <p className="card-text">Solved : {solvedQuestion["Array"]>=0?solvedQuestion["Array"]:0}</p>
                                                     <p className="card-text">Total : {data["Array"]}</p>
                                                 </div>
                                                 <Progressbar bgcolor="#99ff66" progress={calc(solvedQuestion["Array"], data["Array"])} height={30} />
@@ -169,14 +194,14 @@ function Dashboard(props) {
                                                 <div className="topic-title">
                                                         <h4 className='card-title'><b>Matrix</b></h4>
                                                         </div>
-                                                    <img className='lock-unlock' src={lock}></img>
+                                                    <img className='lock-unlock' src={(solvedQuestion["Array"]==data["Array"] || solvedQuestion["Matrix"]>0)?unlock:lock}></img>
                                                 </div>
 
                                                 <div className='card-content'>
-                                                    <p className="card-text">Solved : {solvedQuestion["Array"]}</p>
-                                                    <p className="card-text">Total : {data["Array"]}</p>
+                                                    <p className="card-text">Solved : {solvedQuestion["Matrix"]>=0?solvedQuestion["Matrix"]:0}</p>
+                                                    <p className="card-text">Total : {data["Matrix"]}</p>
                                                 </div>
-                                                <Progressbar bgcolor="#99ff66" progress={calc(solvedQuestion["Array"], data["Array"])} height={30} />
+                                                <Progressbar bgcolor="#99ff66" progress={calc(solvedQuestion["Matrix"]>=0?solvedQuestion["Matrix"]:0, data["Array"])} height={30} />
                                             </div>
                                         </div>
 
@@ -425,7 +450,7 @@ function Dashboard(props) {
                                                     <div className="topic-title">
                                                         <h4 className='card-title'><b>Dp</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>

@@ -6,7 +6,7 @@ import questions from '../Static/question.json';
 import "./App.css";
 function Question_list(props) {
 
-    console.log("question props", props.allQuestionStatus);
+   // console.log("question props", props.allQuestionStatus);
     const [loading, setLoading] = useState(true);
     const [questions_arr, setQuestionArr] = useState([]);
     const [currsearchText, setText] = useState('');
@@ -18,7 +18,6 @@ function Question_list(props) {
 
 
     let curr_module = props.allQuestionStatus.curr_module;
-    console.log("curr module",m);
     let questionList = questions[curr_module].question;
 
 
@@ -63,7 +62,7 @@ function Question_list(props) {
     }
 
     const sortAscend = () => {
-        console.log("ascd clicked");
+        
         let ascn_arr = questions_arr.sort((objA, objB) => {
             if (objA["difficulty"] === objB["difficulty"]) {
                 return 1;
@@ -81,8 +80,9 @@ function Question_list(props) {
                 return -1;
             }
         });
-        console.log("sord ascn", ascn_arr);
-        setQuestionArr(ascn_arr);
+        let arr=[...ascn_arr];
+        
+        setQuestionArr(arr);
     }
 
 
@@ -105,8 +105,9 @@ function Question_list(props) {
                 return 1;
             }
         });
-        console.log("sord desc", desc_arr);
-        setQuestionArr(desc_arr);
+        let arr1=[...desc_arr];
+        console.log("sord desc", arr1);
+        setQuestionArr(arr1);
 
     }
 
