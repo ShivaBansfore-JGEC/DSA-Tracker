@@ -9,12 +9,24 @@ import 'firebase/firestore';
 import 'firebase/auth';
 import rootReducer from './Reducers/rootReducer';
 
+import {persistStore,persistReducer} from "redux-persist";
+import storage from 'redux-persist/lib/storage';
+import {PersistGate} from 'redux-persist/integration/react';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { reduxFirestore, getFirestore } from 'redux-firestore';
 import { ReactReduxFirebaseProvider, getFirebase } from 'react-redux-firebase';
 import { createFirestoreInstance } from 'redux-firestore';
 import { composeWithDevTools} from 'redux-devtools-extension'
+
+
+//persist redux store
+const persistConfig={
+  key:'root',
+  storage
+}
+
+const persistedReducer=persistReducer(persistConfig,rootReducer);
 
 
 const firebaseConfig = {
@@ -31,12 +43,14 @@ firebase.firestore();
 
 
 
-const reduxStore = createStore(rootReducer,
+const reduxStore = createStore(persistedReducer,
   composeWithDevTools(
     applyMiddleware(thunk.withExtraArgument({getFirebase, getFirestore})), 
     reduxFirestore(firebase) // redux bindings for firestore,  
   )
 );
+
+const persistor=persistStore(reduxStore);
 
 
 
@@ -49,7 +63,9 @@ ReactDOM.render(
       dispatch={reduxStore.dispatch}
       createFirestoreInstance={createFirestoreInstance}
       >
-      <App />
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
     </ReactReduxFirebaseProvider>
     </BrowserRouter>
   </Provider>,

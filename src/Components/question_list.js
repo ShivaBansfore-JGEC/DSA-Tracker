@@ -13,15 +13,23 @@ function Question_list(props) {
     const [isSorted, setSorted] = useState(false);
     const [limit, setLimit] = useState(4);
     const [currentPage, setPage] = useState(1);
+    const [QuestionSet,setQuestion]=useState([]);
+    const [m,setm]=useState('');
 
 
     let curr_module = props.allQuestionStatus.curr_module;
-    //console.log("questions", curr_module);
+    console.log("curr module",m);
     let questionList = questions[curr_module].question;
 
 
 
-
+    useEffect(()=>{
+        setQuestion(questions);
+    },[QuestionSet]);
+    
+    useEffect(()=>{
+        setm(props.allQuestionStatus.curr_module);
+    },[])
 
 
     useEffect(() => {
