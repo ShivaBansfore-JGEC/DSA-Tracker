@@ -4,17 +4,19 @@ import { NavLink } from 'react-router-dom';
 import * as dashboardAction from '../Actions/dashBoardAction';
 import questions from '../Static/question.json';
 import "./App.css";
+
+
 function Question_list(props) {
 
-   // console.log("question props", props.allQuestionStatus);
+    // console.log("question props", props.allQuestionStatus);
     const [loading, setLoading] = useState(true);
     const [questions_arr, setQuestionArr] = useState([]);
     const [currsearchText, setText] = useState('');
     const [isSorted, setSorted] = useState(false);
     const [limit, setLimit] = useState(4);
     const [currentPage, setPage] = useState(1);
-    const [QuestionSet,setQuestion]=useState([]);
-    const [m,setm]=useState('');
+    const [QuestionSet, setQuestion] = useState([]);
+    const [m, setm] = useState('');
 
 
     let curr_module = props.allQuestionStatus.curr_module;
@@ -22,13 +24,13 @@ function Question_list(props) {
 
 
 
-    useEffect(()=>{
+    useEffect(() => {
         setQuestion(questions);
-    },[QuestionSet]);
-    
-    useEffect(()=>{
+    }, [QuestionSet]);
+
+    useEffect(() => {
         setm(props.allQuestionStatus.curr_module);
-    },[])
+    }, [])
 
 
     useEffect(() => {
@@ -37,8 +39,12 @@ function Question_list(props) {
 
 
 
+
+ 
+
     const toggle = (e, module, qn) => {
         //console.log("question no:",qn);
+        
         let status = props.allQuestionStatus.curr_questionlist_status[curr_module][qn].status;
         console.log("toggle status:", status);
         props.updateQuestionStatus(module, qn);
@@ -61,8 +67,12 @@ function Question_list(props) {
 
     }
 
+
+
+
+
     const sortAscend = () => {
-        
+
         let ascn_arr = questions_arr.sort((objA, objB) => {
             if (objA["difficulty"] === objB["difficulty"]) {
                 return 1;
@@ -80,8 +90,8 @@ function Question_list(props) {
                 return -1;
             }
         });
-        let arr=[...ascn_arr];
-        
+        let arr = [...ascn_arr];
+
         setQuestionArr(arr);
     }
 
@@ -105,7 +115,7 @@ function Question_list(props) {
                 return 1;
             }
         });
-        let arr1=[...desc_arr];
+        let arr1 = [...desc_arr];
         console.log("sord desc", arr1);
         setQuestionArr(arr1);
 
@@ -138,7 +148,7 @@ function Question_list(props) {
     if (filterList.length == 0 && questions_arr.length != 0) {
         setPage(1);
     }
-    
+
 
     return (
         <>
@@ -175,10 +185,10 @@ function Question_list(props) {
                         <>
                             <div className="question-list-container">
                                 {console.log("pageNumberArr:", pageNumberArr)}
-                               
+
                                 <ul style={{ listStyle: 'none' }} id="question-ul">
                                     {
-                                        
+
 
                                         filterList.map((data) => {
 
@@ -230,7 +240,7 @@ function Question_list(props) {
                                 let classStyleName = pageNumber == currentPage ? 'page-item active' : 'page-item';
 
                                 return (
-                                    <li onClick={() =>handlePageChange(pageNumber)} className={classStyleName} key={pageNumber}>
+                                    <li onClick={() => handlePageChange(pageNumber)} className={classStyleName} key={pageNumber}>
                                         <span className="page-link">{pageNumber}</span>
                                     </li>
                                 )
