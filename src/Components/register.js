@@ -45,11 +45,11 @@ function Register(props) {
 
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" class="form-control"  onChange={handleEmail} placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping" />
+                <input type="email" class="form-control"  onChange={handleEmail} placeholder="Email" aria-label="Username" aria-describedby="addon-wrapping" />
             </div>
             <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" class="form-control" placeholder="Password" onChange={handlePass} aria-label="Username" aria-describedby="addon-wrapping" />
+                <input type="password" class="form-control" placeholder="Password" onChange={handlePass} aria-label="Username" aria-describedby="addon-wrapping" />
             </div>
             <button type="button" class="btn btn-info" onClick={handleSubmit}>Register</button>
             </div>

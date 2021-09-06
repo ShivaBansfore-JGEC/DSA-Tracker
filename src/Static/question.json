@@ -163,5 +163,781 @@
                 "coins":10
             }
         ]
+    },
+    "Hashing":{
+        "question":[
+            {
+                "question-no":24,
+                "question-name":"Two Sum",
+                "url":"https://leetcode.com/problems/two-sum/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":25,
+                "question-name":"4Sum",
+                "url":"https://leetcode.com/problems/4sum/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":26,
+                "question-name":"Longest Consecutive Sequence",
+                "url":"https://leetcode.com/problems/longest-consecutive-sequence/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":27,
+                "question-name":"Largest Subarray with 0 sum ",
+                "url":"https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":28,
+                "question-name":"Count number of subarrays with given XOR",
+                "url":"https://www.geeksforgeeks.org/count-number-subarrays-given-xor/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":29,
+                "question-name":"Longest substring without repeat ",
+                "url":"https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "2-pointer":{
+        "question":[
+            {
+                "question-no":30,
+                "question-name":"Copy List with Random Pointer",
+                "url":"https://leetcode.com/problems/copy-list-with-random-pointer/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":31,
+                "question-name":"3Sum",
+                "url":"https://leetcode.com/problems/3sum/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":32,
+                "question-name":"Trapping Rain Water",
+                "url":"https://leetcode.com/problems/trapping-rain-water/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":33,
+                "question-name":"Remove Duplicates from Sorted Array",
+                "url":"https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":34,
+                "question-name":"Max Consecutive Ones",
+                "url":"https://leetcode.com/problems/max-consecutive-ones/",
+                "difficulty":"Easy",
+                "coins":10
+            }
+        ]
+    },
+    "Binary Search":{
+        "question":[
+            {
+                "question-no":35,
+                "question-name":"N-th root of an integer",
+                "url":"https://www.geeksforgeeks.org/calculating-n-th-real-root-using-binary-search/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":36,
+                "question-name":"Matrix Median",
+                "url":"https://www.interviewbit.com/problems/matrix-median/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":37,
+                "question-name":"Single Element in a Sorted Array",
+                "url":"https://leetcode.com/problems/single-element-in-a-sorted-array/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":38,
+                "question-name":"Search in Rotated Sorted Array",
+                "url":"https://leetcode.com/problems/search-in-rotated-sorted-array/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":39,
+                "question-name":"Median of Two Sorted Arrays",
+                "url":"https://leetcode.com/problems/median-of-two-sorted-arrays/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":40,
+                "question-name":"K-th element of two sorted Arrays",
+                "url":"https://practice.geeksforgeeks.org/problems/k-th-element-of-two-sorted-array1317/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":41,
+                "question-name":"Aggressive Cows",
+                "url":"https://www.spoj.com/problems/AGGRCOW/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":42,
+                "question-name":"Allocate Minimum Number of Pages",
+                "url":"https://www.interviewbit.com/problems/allocate-books/",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "Stack and Queue":{
+        "question":[
+            {
+                "question-no":43,
+                "question-name":"Implement stack using array ",
+                "url":"https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":44,
+                "question-name":"Implement Stack using Queues",
+                "url":"https://leetcode.com/problems/implement-stack-using-queues/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":45,
+                "question-name":"Implement Queue using Stacks",
+                "url":"https://leetcode.com/problems/implement-queue-using-stacks/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":46,
+                "question-name":"Valid Parentheses",
+                "url":"https://leetcode.com/problems/valid-parentheses/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":47,
+                "question-name":"Next Greater Element II",
+                "url":"https://leetcode.com/problems/next-greater-element-ii/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":48,
+                "question-name":"Sort a stack ",
+                "url":"https://practice.geeksforgeeks.org/problems/sort-a-stack/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":49,
+                "question-name":"Nearest Smaller Element",
+                "url":"https://www.interviewbit.com/problems/nearest-smaller-element/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":50,
+                "question-name":"LRU Cache",
+                "url":"https://leetcode.com/problems/lru-cache/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":51,
+                "question-name":"LFU Cache",
+                "url":"https://leetcode.com/problems/lfu-cache/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":52,
+                "question-name":"Sort a stack ",
+                "url":"https://practice.geeksforgeeks.org/problems/sort-a-stack/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":53,
+                "question-name":" Largest Rectangle in Histogram",
+                "url":"https://leetcode.com/problems/largest-rectangle-in-histogram/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":54,
+                "question-name":"Sliding Window Maximum",
+                "url":"https://leetcode.com/problems/sliding-window-maximum/",
+                "difficulty":"Hard",
+                "coins":50
+            }
+        ]
+    },
+    "LinkedList":{
+        "question":[
+            {
+                "question-no":55,
+                "question-name":"Reverse a linkedlist",
+                "url":"https://leetcode.com/problems/reverse-linked-list/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":56,
+                "question-name":"Middle of the Linked List",
+                "url":"https://leetcode.com/problems/middle-of-the-linked-list/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":57,
+                "question-name":"Merge two sorted Linked List",
+                "url":"https://leetcode.com/problems/merge-two-sorted-lists/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":58,
+                "question-name":" Remove Nth Node From End of List",
+                "url":"https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":59,
+                "question-name":"Delete Node in a Linked List",
+                "url":"https://leetcode.com/problems/delete-node-in-a-linked-list/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":60,
+                "question-name":"Add two numbers as LinkedList",
+                "url":"https://leetcode.com/problems/add-two-numbers/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":61,
+                "question-name":"Linked List Cycle",
+                "url":"https://leetcode.com/problems/linked-list-cycle/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":62,
+                "question-name":"Intersection of Two Linked Lists",
+                "url":"https://leetcode.com/problems/intersection-of-two-linked-lists/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":63,
+                "question-name":"Reverse Nodes in k-Group",
+                "url":"https://leetcode.com/problems/reverse-nodes-in-k-group/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":64,
+                "question-name":"Palindrome Linked List",
+                "url":"https://leetcode.com/problems/palindrome-linked-list/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":65,
+                "question-name":"Linked List Cycle II",
+                "url":"https://leetcode.com/problems/linked-list-cycle-ii/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":66,
+                "question-name":"Flattening a Linked List",
+                "url":"https://practice.geeksforgeeks.org/problems/flattening-a-linked-list/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":67,
+                "question-name":"Rotate a LinkedList",
+                "url":"https://leetcode.com/problems/rotate-list/description/",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "Recursion":{
+        "question":[
+            {
+                "question-no":68,
+                "question-name":"Subset Sums",
+                "url":"https://practice.geeksforgeeks.org/problems/subset-sums2234/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":69,
+                "question-name":" Subsets II",
+                "url":"https://leetcode.com/problems/subsets-ii/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":70,
+                "question-name":" Combination Sum",
+                "url":"https://leetcode.com/problems/combination-sum/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":71,
+                "question-name":"Combination Sum II",
+                "url":"https://leetcode.com/problems/combination-sum-ii/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":72,
+                "question-name":"Palindrome Partitioning",
+                "url":"https://leetcode.com/problems/palindrome-partitioning/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":73,
+                "question-name":"Permutation Sequence",
+                "url":"https://leetcode.com/problems/permutation-sequence/",
+                "difficulty":"Hard",
+                "coins":50
+            }
+        ]
+    },
+    "Backtracking":{
+        "question":[
+            {
+                "question-no":74,
+                "question-name":"Print all Permutations of a string/array",
+                "url":"https://leetcode.com/problems/permutations/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":75,
+                "question-name":"N-Queens",
+                "url":"https://leetcode.com/problems/n-queens/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":76,
+                "question-name":"Sudoku Solver",
+                "url":"https://leetcode.com/problems/sudoku-solver/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":77,
+                "question-name":"M-Coloring Problem",
+                "url":"https://practice.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1#",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":78,
+                "question-name":"Rat in a Maze Problem-I ",
+                "url":"https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "Greedy":{
+        "question":[
+            {
+                "question-no":79,
+                "question-name":"N meetings in one room",
+                "url":"https://practice.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":80,
+                "question-name":"Minimum number of platforms required for a railway",
+                "url":"https://practice.geeksforgeeks.org/problems/minimum-platforms-1587115620/1#",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":81,
+                "question-name":"Job Sequencing Problem",
+                "url":"https://practice.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1#",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":82,
+                "question-name":"Fractional Knapsack ",
+                "url":"https://practice.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":83,
+                "question-name":"Choose and Swap",
+                "url":"https://practice.geeksforgeeks.org/problems/choose-and-swap0531/1",
+                "difficulty":"Easy",
+                "coins":10
+            }
+        ]
+    },
+    "Tree":{
+        "question":[
+            {
+                "question-no":84,
+                "question-name":"Inorder Traversal of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/inorder-traversal/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":85,
+                "question-name":"Preorder Traversal of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/preorder-traversal/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":86,
+                "question-name":"Postorder Traversal of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/postorder-traversal/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":87,
+                "question-name":"Binary Tree Level Order Traversal",
+                "url":"https://leetcode.com/problems/binary-tree-level-order-traversal/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":88,
+                "question-name":"Left View of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/left-view-of-binary-tree/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":89,
+                "question-name":"Binary Tree Right Side View",
+                "url":"https://leetcode.com/problems/binary-tree-right-side-view/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":90,
+                "question-name":"Vertical Order Traversal of a Binary Tree",
+                "url":"https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":91,
+                "question-name":"Top View of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/top-view-of-binary-tree/1",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":92,
+                "question-name":"LFU Cache",
+                "url":"https://leetcode.com/problems/lfu-cache/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":93,
+                "question-name":"Bottom View of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":94,
+                "question-name":"Height of Binary Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/height-of-binary-tree/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":95,
+                "question-name":"Diameter of Binary Tree ",
+                "url":"https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":96,
+                "question-name":"Check for Balanced Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/check-for-balanced-tree/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":97,
+                "question-name":"Lowest Common Ancestor of a Binary Tree",
+                "url":"https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":98,
+                "question-name":"Same Tree",
+                "url":"https://leetcode.com/problems/same-tree/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":99,
+                "question-name":"Binary Tree Maximum Path Sum",
+                "url":"https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":100,
+                "question-name":"Construct Binary Tree from Preorder and Inorder Traversal",
+                "url":"https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":101,
+                "question-name":"Construct Binary Tree from Inorder and Postorder Traversal",
+                "url":"https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":102,
+                "question-name":"Diameter of Binary Tree ",
+                "url":"https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":103,
+                "question-name":"Symmetric Tree",
+                "url":"https://leetcode.com/problems/symmetric-tree/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":104,
+                "question-name":"Flatten Binary Tree to Linked List",
+                "url":"https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":105,
+                "question-name":"Binary Tree is mirror?",
+                "url":"https://practice.geeksforgeeks.org/problems/symmetric-tree/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":106,
+                "question-name":"Populating Next Right Pointers in Each Node",
+                "url":"https://leetcode.com/problems/populating-next-right-pointers-in-each-node/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":107,
+                "question-name":"Search in a Binary Search Tree",
+                "url":"https://leetcode.com/problems/search-in-a-binary-search-tree/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":108,
+                "question-name":"Validate Binary Search Tree",
+                "url":"https://leetcode.com/problems/validate-binary-search-tree/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":109,
+                "question-name":"Lowest Common Ancestor of a Binary Search Tree",
+                "url":"https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":110,
+                "question-name":"Predecessor and Successor",
+                "url":"https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":111,
+                "question-name":"Floor and Ceil from a BST",
+                "url":"https://www.geeksforgeeks.org/floor-and-ceil-from-a-bst/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":112,
+                "question-name":"Kth Smallest Element in a BST",
+                "url":"https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":113,
+                "question-name":"Two Sum IV - Input is a BST",
+                "url":"https://leetcode.com/problems/two-sum-iv-input-is-a-bst/",
+                "difficulty":"Easy",
+                "coins":10
+            },{
+                "question-no":114,
+                "question-name":" Binary Search Tree Iterator",
+                "url":"https://leetcode.com/problems/binary-search-tree-iterator/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":115,
+                "question-name":"Largest BST ",
+                "url":"https://practice.geeksforgeeks.org/problems/largest-bst/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":116,
+                "question-name":"Serialize and deserialize Binary Tree",
+                "url":"https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":117,
+                "question-name":"Binary Tree to Doubly linked list",
+                "url":"https://practice.geeksforgeeks.org/problems/binary-tree-to-dll/1",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "Graph":{
+        "question":[
+            {
+                "question-no":118,
+                "question-name":" Clone Graph",
+                "url":"https://leetcode.com/problems/clone-graph/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":119,
+                "question-name":"Detect cycle in an undirected graph",
+                "url":"https://practice.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":120,
+                "question-name":"Detect cycle in a directed graph",
+                "url":"https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":121,
+                "question-name":"Topological sort",
+                "url":"https://practice.geeksforgeeks.org/problems/topological-sort/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":122,
+                "question-name":"Number of islands ",
+                "url":"https://leetcode.com/problems/number-of-islands/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":123,
+                "question-name":"Is Graph Bipartite?",
+                "url":"https://leetcode.com/problems/is-graph-bipartite/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":124,
+                "question-name":"Strongly Connected Components (Kosaraju's Algo)",
+                "url":"https://practice.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":125,
+                "question-name":"Implement Dijkstra Algorithm ",
+                "url":"https://practice.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":126,
+                "question-name":"Negative weight cycle",
+                "url":"https://practice.geeksforgeeks.org/problems/negative-weight-cycle3504/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":127,
+                "question-name":"Floyd Warshall",
+                "url":"https://practice.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":128,
+                "question-name":"Minimum Spanning Tree",
+                "url":"https://practice.geeksforgeeks.org/problems/minimum-spanning-tree/1",
+                "difficulty":"Medium",
+                "coins":30
+            }
+        ]
+    },
+    "Dp":{
+        "question":[
+            {
+                "question-no":129,
+                "question-name":"Maximum Product Subarray",
+                "url":"https://leetcode.com/problems/maximum-product-subarray/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":130,
+                "question-name":"Longest Increasing Subsequence",
+                "url":"https://leetcode.com/problems/longest-increasing-subsequence/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":131,
+                "question-name":"Longest Common Subsequence",
+                "url":"https://leetcode.com/problems/longest-common-subsequence/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":132,
+                "question-name":"0-1 Knapsack",
+                "url":"https://www.interviewbit.com/problems/0-1-knapsack/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":133,
+                "question-name":"Edit Distance",
+                "url":"https://leetcode.com/problems/edit-distance/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":134,
+                "question-name":"Maximum sum increasing subsequence",
+                "url":"https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence4749/1",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":135,
+                "question-name":"Matrix Chain Multiplication",
+                "url":"https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":136,
+                "question-name":"Minimum Path Sum",
+                "url":"https://leetcode.com/problems/minimum-path-sum/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":137,
+                "question-name":"Coin Change",
+                "url":"https://leetcode.com/problems/coin-change/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":138,
+                "question-name":"Subset Sum Problem ",
+                "url":"https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1/?category[]=Dynamic%20Programming&category[]=Dynamic%20Programming&page=4&query=category[]Dynamic%20Programmingpage4category[]Dynamic%20Programming",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":139,
+                "question-name":"Rod Cutting",
+                "url":"https://www.interviewbit.com/problems/rod-cutting/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":140,
+                "question-name":"Egg Drop Problem!",
+                "url":"https://www.interviewbit.com/problems/egg-drop-problem/",
+                "difficulty":"Hard",
+                "coins":50
+            },{
+                "question-no":141,
+                "question-name":"Word Break",
+                "url":"https://leetcode.com/problems/word-break/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":142,
+                "question-name":"Palindrome Partitioning",
+                "url":"https://leetcode.com/problems/palindrome-partitioning/",
+                "difficulty":"Medium",
+                "coins":30
+            },{
+                "question-no":143,
+                "question-name":"Maximum Profit in Job Scheduling",
+                "url":"https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+                "difficulty":"Hard",
+                "coins":50
+            }
+        ]
     }
+
 }

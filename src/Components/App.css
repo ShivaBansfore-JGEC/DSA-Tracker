@@ -198,9 +198,11 @@ body{
    justify-content: center;
    align-items: center;
    background-color: aquamarine;
+   margin-top: 20px;
    padding-top: 50px;
    
 }
+
 .level1-container{
     width: 100%;
     display: flex;
@@ -221,6 +223,9 @@ body{
     flex: 2;
     margin-top: 40px;
     margin-bottom: 30px;
+}
+.Headline h4{
+    font-family: cursive;
 }
 
 .nav_bar{
@@ -358,6 +363,7 @@ body{
     border-radius: 5px;   
 
   }
+ 
   .input-group{
       margin-top: 40px;
       width: 70%;

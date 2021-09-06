@@ -55,7 +55,7 @@ function Login(props) {
             </div>
             <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping"></span>
-                <input type="text" class="form-control" value={password} onChange={handlePass} placeholder="Password"  aria-label="Username" aria-describedby="addon-wrapping" />
+                <input type="password" class="form-control" value={password} onChange={handlePass} placeholder="Password"  aria-label="Username" aria-describedby="addon-wrapping" />
             </div>
             {props.authMine?.errormsg?.message ? <div className="input-group full">
                       <span className="error-message" >{props.authMine?.errormsg?.message}</span>
