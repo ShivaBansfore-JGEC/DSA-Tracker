@@ -126,125 +126,126 @@ function Dashboard(props) {
     const handleClick = (value) => {
 
         props.updateModule(value);
-        if (value === "Matrix") {
-            let nofQuestionsolved=solvedQuestion["Array"]>0?solvedQuestion["Array"]:0;
-            let tot=data["Array"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
+        // if (value === "Matrix") {
+        //     let nofQuestionsolved=solvedQuestion["Array"]>0?solvedQuestion["Array"]:0;
+        //     let tot=data["Array"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
             
-        }else if(value==="String"){
-            let nofQuestionsolved=solvedQuestion["Matrix"]>0?solvedQuestion["Matrix"]:0;
-            let tot=data["Matrix"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
+        // }else if(value==="String"){
+        //     let nofQuestionsolved=solvedQuestion["Matrix"]>0?solvedQuestion["Matrix"]:0;
+        //     let tot=data["Matrix"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
 
-        }else if(value==="Hashing"){
-            let nofQuestionsolved=solvedQuestion["String"]>0?solvedQuestion["String"]:0;
-            let tot=data["String"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
+        // }else if(value==="Hashing"){
+        //     let nofQuestionsolved=solvedQuestion["String"]>0?solvedQuestion["String"]:0;
+        //     let tot=data["String"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
 
-        }else if(value==="2-pointer"){
-            let nofQuestionsolved=solvedQuestion["Hashing"]>0?solvedQuestion["Hashing"]:0;
-            let tot=data["Hashing"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
+        // }else if(value==="2-pointer"){
+        //     let nofQuestionsolved=solvedQuestion["Hashing"]>0?solvedQuestion["Hashing"]:0;
+        //     let tot=data["Hashing"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
 
-        }else if(value==="Binary Search"){
-            let nofQuestionsolved=solvedQuestion["2-pointer"]>0?solvedQuestion["2-pointer"]:0;
-            let tot=data["2-pointer"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
+        // }else if(value==="Binary Search"){
+        //     let nofQuestionsolved=solvedQuestion["2-pointer"]>0?solvedQuestion["2-pointer"]:0;
+        //     let tot=data["2-pointer"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
 
-        }else if(value==="Stack and Queue"){
-            let nofQuestionsolved=solvedQuestion["Binary Search"]>0?solvedQuestion["Binary Search"]:0;
-            let tot=data["Binary Search"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }else if(value=="LinkedList"){
-            let nofQuestionsolved=solvedQuestion["Stack and Queue"]>0?solvedQuestion["Stack and Queue"]:0;
-            let tot=data["Stack and Queue"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
+        // }else if(value==="Stack and Queue"){
+        //     let nofQuestionsolved=solvedQuestion["Binary Search"]>0?solvedQuestion["Binary Search"]:0;
+        //     let tot=data["Binary Search"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }else if(value=="LinkedList"){
+        //     let nofQuestionsolved=solvedQuestion["Stack and Queue"]>0?solvedQuestion["Stack and Queue"]:0;
+        //     let tot=data["Stack and Queue"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
 
-        }else if(value==="Recursion"){
-            let nofQuestionsolved=solvedQuestion["LinkedList"]>0?solvedQuestion["LinkedList"]:0;
-            let tot=data["LinkedList"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }else if(value==="Backtracking"){
-            let nofQuestionsolved=solvedQuestion["Recursion"]>0?solvedQuestion["Recursion"]:0;
-            let tot=data["Recursion"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }else if(value==="Greedy"){
-            let nofQuestionsolved=solvedQuestion["Backtracking"]>0?solvedQuestion["Backtracking"]:0;
-            let tot=data["Backtracking"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }else if(value==="Tree"){
-            let nofQuestionsolved=solvedQuestion["Greedy"]>0?solvedQuestion["Greedy"]:0;
-            let tot=data["Greedy"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }else if(value==="Graph"){
-            let nofQuestionsolved=solvedQuestion["Tree"]>0?solvedQuestion["Tree"]:0;
-            let tot=data["Tree"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }else if(value==="Dp"){
-            let nofQuestionsolved=solvedQuestion["Graph"]>0?solvedQuestion["Graph"]:0;
-            let tot=data["Graph"];
-            if(nofQuestionsolved<tot){
-                openPopUp();
-            }else{
-                history.push("/questions", value);
-            }
-        }
-        else {
-            history.push("/questions", value);
-        }
+        // }else if(value==="Recursion"){
+        //     let nofQuestionsolved=solvedQuestion["LinkedList"]>0?solvedQuestion["LinkedList"]:0;
+        //     let tot=data["LinkedList"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }else if(value==="Backtracking"){
+        //     let nofQuestionsolved=solvedQuestion["Recursion"]>0?solvedQuestion["Recursion"]:0;
+        //     let tot=data["Recursion"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }else if(value==="Greedy"){
+        //     let nofQuestionsolved=solvedQuestion["Backtracking"]>0?solvedQuestion["Backtracking"]:0;
+        //     let tot=data["Backtracking"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }else if(value==="Tree"){
+        //     let nofQuestionsolved=solvedQuestion["Greedy"]>0?solvedQuestion["Greedy"]:0;
+        //     let tot=data["Greedy"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }else if(value==="Graph"){
+        //     let nofQuestionsolved=solvedQuestion["Tree"]>0?solvedQuestion["Tree"]:0;
+        //     let tot=data["Tree"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }else if(value==="Dp"){
+        //     let nofQuestionsolved=solvedQuestion["Graph"]>0?solvedQuestion["Graph"]:0;
+        //     let tot=data["Graph"];
+        //     if(nofQuestionsolved<tot){
+        //         openPopUp();
+        //     }else{
+        //         history.push("/questions", value);
+        //     }
+        // }
+        // else {
+        //     
+        // }
+        history.push("/questions", value);
 
     }
 
 
-
+    //it calculates percentage of question solved
     const calc = (val1, val2) => {
         val1 = Number(val1);
         val2 = Number(val2);
@@ -336,7 +337,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>String</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Matrix"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -353,7 +354,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Hashing</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Hashing"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -375,7 +376,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>2-pointer</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["2-pointer"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -392,7 +393,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Binary Search</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Binary Search"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -423,7 +424,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Stack & Queue</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Stack and Queue"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -440,7 +441,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>LinkedList</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Stack and Queue"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -462,7 +463,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Recursion</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Recursion"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -479,7 +480,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Backtracking</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Backtracking"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -509,7 +510,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Greedy</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Greedy"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -526,7 +527,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Tree</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Tree"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -548,7 +549,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Graph</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={lock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Graph"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
@@ -565,7 +566,7 @@ function Dashboard(props) {
                                                         <div className="topic-title">
                                                             <h4 className='card-title'><b>Dp</b></h4>
                                                         </div>
-                                                        <img className='lock-unlock' src={unlock}></img>
+                                                        <img className='lock-unlock' src={solvedQuestion["Dp"] == 0 ? lock : unlock}></img>
                                                     </div>
 
                                                     <div className='card-content'>
